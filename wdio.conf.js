@@ -1,4 +1,5 @@
-const path = require("path");
+// const path = require("path");
+import path from "path";
 
 export const config = {
   //
@@ -55,9 +56,9 @@ export const config = {
   //
   capabilities: [
     {
-      "appum:platformName": "Android",
-      "appium:platformVersion": "13.0",
-      "appium:deviceName": "Pixel 7",
+      "appium:platformName": "Android",
+      "appium:platformVersion": "11.0",
+      "appium:deviceName": "Pixel 4",
       "appium:automationName": "UIAutomator2",
       "appium:app": path.join(process.cwd(), "app/android/ApiDemos-debug.apk"),
     },

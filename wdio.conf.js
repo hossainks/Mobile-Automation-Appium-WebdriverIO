@@ -1,5 +1,5 @@
 // const path = require("path");
-import path from "path";
+import path from 'path';
 
 export const config = {
   //
@@ -7,7 +7,7 @@ export const config = {
   // Runner Configuration
   // ====================
   // WebdriverIO supports running e2e tests as well as unit and component tests.
-  runner: "local",
+  runner: 'local',
   port: 4723,
   //
   // ==================
@@ -56,11 +56,11 @@ export const config = {
   //
   capabilities: [
     {
-      "appium:platformName": "Android",
-      "appium:platformVersion": "11.0",
-      "appium:deviceName": "Pixel 4",
-      "appium:automationName": "UIAutomator2",
-      "appium:app": path.join(process.cwd(), "app/android/ApiDemos-debug.apk"),
+      'appium:platformName': 'Android',
+      'appium:platformVersion': '12.0',
+      'appium:deviceName': 'Pixel 7 Android 12',
+      'appium:automationName': 'UIAutomator2',
+      'appium:app': path.join(process.cwd(), 'app/android/ApiDemos-debug.apk'),
     },
   ],
 
@@ -71,7 +71,7 @@ export const config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "info",
+  logLevel: 'info',
   //
   // Set specific log levels per logger
   // loggers:
@@ -111,7 +111,7 @@ export const config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ["appium"],
+  services: ['appium'],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
@@ -119,7 +119,7 @@ export const config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: "mocha",
+  framework: 'mocha',
 
   //
   // The number of times to retry the entire specfile when it fails as a whole
@@ -139,7 +139,7 @@ export const config = {
   // Options to be passed to Mocha.
   // See the full list at http://mochajs.org/
   mochaOpts: {
-    ui: "bdd",
+    ui: 'bdd',
     timeout: 60000,
   },
 
